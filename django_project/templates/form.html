@@ -1,0 +1,124 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-style-6">
+        <!-- <h1>Contact Us</h1> -->
+        <form method="post">
+            {%csrf_token%}
+        <select name="demand_period" id="demand-period">
+            <option hidden value="">Select Demand Period</option>
+            <option value="monthly">Monthly</option>
+            <option value="quarterly">Quarterly</option>
+       
+        </select>    
+        <textarea name="field3" placeholder="Part Number"></textarea>
+        <input type="text" name="field1" placeholder="Service Level" />
+        <select name="forecast_bucket" id="forecast_bucket">
+            <option hidden value="">Select Forecast Bucket</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="6">6</option>
+            <option value="9">9</option>
+            <option value="12">12</option>
+            <option value="15">15</option>
+       
+        </select>
+        <select name="forecast_period" id="forecast_period">
+            <option hidden value="">Select Forecast Period</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+       
+        </select>
+        
+        <input type="submit" value="Forecast" />
+        </form>
+        </div>
+</body>
+</html>
+
+<style type="text/css">
+   
+    .form-style-6 h1{
+        background: #43D1AF;
+        padding: 20px 0;
+       
+        text-align: center;
+        color: #fff;
+        margin: -16px -16px 16px -16px;
+    }
+    .form-style-6 input[type="text"],
+    .form-style-6 input[type="date"],
+    .form-style-6 input[type="datetime"],
+    .form-style-6 input[type="email"],
+    .form-style-6 input[type="number"],
+    .form-style-6 input[type="search"],
+    .form-style-6 input[type="time"],
+    .form-style-6 input[type="url"],
+    .form-style-6 textarea,
+    .form-style-6 select 
+    {
+        -webkit-transition: all 0.30s ease-in-out;
+        -moz-transition: all 0.30s ease-in-out;
+        -ms-transition: all 0.30s ease-in-out;
+        -o-transition: all 0.30s ease-in-out;
+        outline: none;
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        background: #fff;
+        margin-bottom: 4%;
+        border: 1px solid #ccc;
+        padding: 3%;
+        color: #555;
+        font: 95% Arial, Helvetica, sans-serif;
+    }
+    .form-style-6 input[type="text"]:focus,
+    .form-style-6 input[type="date"]:focus,
+    .form-style-6 input[type="datetime"]:focus,
+    .form-style-6 input[type="email"]:focus,
+    .form-style-6 input[type="number"]:focus,
+    .form-style-6 input[type="search"]:focus,
+    .form-style-6 input[type="time"]:focus,
+    .form-style-6 input[type="url"]:focus,
+    .form-style-6 textarea:focus,
+    .form-style-6 select:focus
+    {
+        box-shadow: 0 0 5px #43D1AF;
+        padding: 3%;
+        border: 1px solid #43D1AF;
+    }
+    
+    .form-style-6 input[type="submit"],
+    .form-style-6 input[type="button"]{
+        box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        padding: 3%;
+        background: #43D1AF;
+        border-bottom: 2px solid #30C29E;
+        border-top-style: none;
+        border-right-style: none;
+        border-left-style: none;	
+        color: #fff;
+    }
+    .form-style-6 input[type="submit"]:hover,
+    .form-style-6 input[type="button"]:hover{
+        background: #2EBC99;
+    }
+    
+  tr:nth-child(odd) {
+    background-color:  rgb(232, 226, 226);}
+    </style>

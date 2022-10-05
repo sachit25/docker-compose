@@ -1,0 +1,37 @@
+<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns="http://www.w3.org/TR/REC-html40"><head><!--[if gte mso 9]><xml><x:ExcelWorkbook><x:ExcelWorksheets><x:ExcelWorksheet><x:Name>Analysis Results</x:Name><x:WorksheetOptions><x:DisplayGridlines/></x:WorksheetOptions></x:ExcelWorksheet></x:ExcelWorksheets></x:ExcelWorkbook></xml><![endif]--></head><body><table>
+    <table id="testTable">
+        <caption>Supplier Risk Analysis</caption>
+        <colgroup></colgroup>
+        <colgroup></colgroup>
+        <colgroup></colgroup>
+        <thead>
+        <tr>
+            <th>No.</th>
+            <th>Question</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Q1</td>
+            <td>Do you have the Quality Unit?</td>
+            <td id="htqf1"></td>
+        </tr>
+        <tr>
+            <td>Q2</td>
+            <td>Apply PICS GMP?</td>
+            <td id="htqf2"></td>
+        </tr>
+        <tr>
+            <td>Q3</td>
+            <td>Do you have a deviation or non-conformance procedure?</td>
+            <td id="htqf3"></td>
+        </tr>
+        <tr>
+            <td>Q4</td>
+            <td>Do you have a customer complaint procedure?</td>
+            <td id="htqf4"></td>
+        </tr>
+        </tbody>
+    </table>
+</table></body></html>

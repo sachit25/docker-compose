@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #596c71;
+
+  /* background-image: url("{% static 'skyline_logo.png' %}"); */
+  background: url("/static/web-design-background.png")  no-repeat ;
+  /* background-image: url("background.jpg"); */
+  background-size: cover;
+}
+
+.outer {
+  overflow-y: auto;
+  height: 300px;
+}
+
+.outer {
+  width: 100%;
+  -layout: fixed;
+}
+
+.outer th {
+  text-align: left;
+  top: 0;
+  position: sticky;
+  background-color: white;
+}
+
+  
+
+
+ 

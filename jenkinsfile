@@ -1,0 +1,38 @@
+pipeline{
+    agent any
+    
+    stages{
+        stage("setup python virtual env"){
+            steps{
+             sh '''
+             chmod +x envsetup.sh
+             ./envsetup.sh
+             ''' 
+            } 
+        }  
+
+
+        stage("setup Gunicorn server"){
+            steps{
+             sh '''
+             chmod +x envsetup.sh
+             ./gunicorn.sh
+             ''' 
+            } 
+        }  
+
+
+        stage("setup NGINX server"){
+            steps{
+             sh '''
+             chmod +x nginx.sh
+             ./nginx.sh
+             ''' 
+            } 
+        }  
+    }
+
+    
+
+
+}
